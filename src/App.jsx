@@ -5,6 +5,8 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import GearDetail from './pages/GearDetail'
+import AddListing from './pages/AddListing'
+import Dashboard from './pages/Dashboard'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/gear/:id" element={<GearDetail />} />
+        <Route path="/add-listing" element={<AddListing />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
   )
