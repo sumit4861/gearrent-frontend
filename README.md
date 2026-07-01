@@ -1,16 +1,28 @@
-# React + Vite
+# ⚙️ GearRent — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React.js frontend for GearRent, a peer-to-peer gear rental marketplace.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [gear-rent.vercel.app](https://gear-rent.vercel.app)  
+📦 **Backend Repo:** [github.com/sumit4861/gearrent-backend](https://github.com/sumit4861/gearrent-backend)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React.js + Vite
+- React Router
+- Axios
+- react-datepicker
+- react-hot-toast
 
-## React Compiler
+## Pages
+- Home — gear listings with search and category filters
+- Gear Detail — images, booking calendar, price summary
+- Add Listing — form with AI description generator
+- Dashboard — manage listings, approve bookings, leave reviews
+- Login / Register
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Setup
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Set API base URL in `src/api/axios.js` to your backend URL.
