@@ -120,13 +120,13 @@ export default function Dashboard() {
   if(loading) return <p style={{padding: '2rem'}}>Loading dashboard...</p>
 
   return (
-    <div style={styles.page}>
+    <div style={styles.page} className="page-padding">
       <div style={styles.container}>
         <h2 style={styles.title}>Dashboard</h2>
         <p style={styles.sub}>Welcome back, {user?.name}</p>
 
         {/* Tabs */}
-        <div style={styles.tabs}>
+        <div style={styles.tabs} className="dashboard-tabs">
           {[
             {key: 'myListings', label: `My Listings (${myListings.length})` },
             {key: 'ownerBookings', label: `Booking Requests (${ownerBookings.length})`},

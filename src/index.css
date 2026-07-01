@@ -14,3 +14,126 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* Responsive breakpoints */
+/* Tablet: max-width 768px */
+/* Mobile: max-width 480px */
+
+/* Navbar responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1rem !important;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .navbar-links {
+    gap: 0.5rem !important;
+    flex-wrap: wrap;
+  }
+
+  .navbar-links a,
+  .navbar-links button,
+  .navbar-links span {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* Home hero */
+@media (max-width: 768px) {
+  .hero {
+    padding: 1.25rem 1rem !important;
+  }
+
+  .hero h1 {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .hero p {
+    font-size: 0.85rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .search-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.4rem !important;
+  }
+
+  .search-row input {
+    width: 100% !important;
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  .search-row button {
+    padding: 0.5rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  .gear-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .categories {
+    padding: 0.6rem 0.75rem !important;
+    gap: 0.4rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .gear-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .categories {
+    padding: 0.75rem 1rem !important;
+  }
+}
+
+/* GearDetail responsive */
+@media (max-width: 900px) {
+  .gear-detail-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .booking-card-sticky {
+    position: static !important;
+  }
+}
+
+/* AddListing responsive */
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Dashboard responsive */
+@media (max-width: 768px) {
+  .booking-card {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .booking-left {
+    flex-direction: column !important;
+  }
+
+  .listing-card {
+    flex-wrap: wrap !important;
+  }
+
+  .dashboard-tabs {
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* General padding fix for mobile */
+@media (max-width: 480px) {
+  .page-padding {
+    padding: 1rem !important;
+  }
+}

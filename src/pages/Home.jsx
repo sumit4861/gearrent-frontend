@@ -36,12 +36,12 @@ export default function Home() {
   }
   return (
     <div style={styles.page}>
-      <div style={styles.hero}>
+      <div style={styles.hero} className="hero">
         <h1 style={styles.heroTitle}> Rent gear from people near you</h1>
         <p style={styles.heroSub}>Cycles, cameras, tents, drones and more - without buying</p>
 
         {/* Search bar */}
-        <form onSubmit={handleSearch} style={styles.searchRow}>
+        <form onSubmit={handleSearch} style={styles.searchRow} className="search-row">
           <input
             type="text"
             placeholder='Search gear...'
@@ -61,7 +61,7 @@ export default function Home() {
       </div>
 
       {/* Category filters */}
-      <div style={styles.categories}>
+      <div style={styles.categories} className="categories">
         {CATEGORIES.map(cat => (
           <button
           key={cat}
@@ -79,7 +79,7 @@ export default function Home() {
       </div>
 
       {/* Gear grid */}
-      <div style={styles.container}>
+      <div style={styles.container} className="gear-grid">
         {loading ? (
           <p style={styles.msg}>Loading gear...</p>
         ) : gear.length === 0 ? (

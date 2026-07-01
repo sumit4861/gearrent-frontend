@@ -11,9 +11,9 @@ export default function Navbar() {
   }
 
   return (
-    <nav style={styles.nav}>
+    <nav style={styles.nav} className="navbar">
       <Link to="/" style={styles.logo}>⚙️ GearRent</Link>
-      <div style={styles.links}>
+      <div style={styles.links} className="navbar-links">
         {user ? (
           <>
             <span style={styles.username}>Hi, {user.name}</span>

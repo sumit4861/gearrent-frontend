@@ -98,7 +98,7 @@ export default function AddListing() {
           </div>
 
           {/* Category + Condition */}
-          <div style={styles.row}>
+          <div style={styles.row} className="form-row">
             <div style={styles.field}>
               <label style={styles.label}>Category</label>
               <select 
@@ -151,7 +151,7 @@ export default function AddListing() {
             />
           </div>
             {/* Price + Deposit */}
-            <div style={styles.row}>
+            <div style={styles.row} className="form-row">
               <div style={styles.field}>
                 <label style={styles.label}>Price per Day (₹)</label>
                 <input

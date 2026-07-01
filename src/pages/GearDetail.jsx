@@ -106,7 +106,7 @@ export default function GearDetail() {
 
   return (
     <div style={styles.page}>
-      <div style={styles.container}>
+      <div style={styles.container} className="gear-detail-container">
 
         {/* Left — images + details */}
         <div style={styles.left}>
@@ -182,7 +182,7 @@ export default function GearDetail() {
         </div>
 
         {/* Right — booking card */}
-        <div style={styles.right}>
+        <div style={styles.right} className="booking-card-sticky">
           <div style={styles.bookingCard}>
             <div style={styles.priceRow}>
               <span style={styles.price}>₹{gear.pricePerDay}</span>
